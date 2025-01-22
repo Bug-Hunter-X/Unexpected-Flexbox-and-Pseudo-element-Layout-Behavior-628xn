@@ -1,0 +1,20 @@
+/* bugSolution.css */
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  flex: 1;
+  position: relative;
+}
+
+.item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  background-color: blue;
+}
